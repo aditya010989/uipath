@@ -1,0 +1,55 @@
+{
+  "GenerateCrossPlatformAttributes": false,
+  "GenerateSelectorsForInnerElements": true,
+  "Connections": [
+    {
+      "Name": "IOS",
+      "Description": null,
+      "Url": "https://jatinderjain4:8n7sBB3RLnESyhyhq3wn@hub-cloud.browserstack.com/wd/hub",
+      "PlatformName": "iOS",
+      "PlatformVersion": "13",
+      "DeviceName": "iPhone 11 Pro",
+      "Capabilities": {}
+    },
+    {
+      "Name": "android",
+      "Description": null,
+      "Url": "http://localhost:4723",
+      "PlatformName": "Android",
+      "PlatformVersion": "11",
+      "DeviceName": "Pixel_3a_API_30_x86",
+      "Capabilities": {}
+    }
+  ],
+  "Applications": [
+    {
+      "Name": "Eribank_ios",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "iOS": {
+          "Capabilities": {
+            "app": "bs://d1f671666f047bc0ea2a76b04d9a325d23c5b34d"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "Name": "eribank_andorid",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "D:\\aditya\\UiPathProject\\UiPathProject\\.settings\\APK File\\eribank.apk"
+          },
+          "StartPage": null
+        }
+      }
+    }
+  ],
+  "NormalizeSliderValue": false,
+  "IdsMaxAllowedLength": 40,
+  "Variables": {}
+}

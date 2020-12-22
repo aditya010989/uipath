@@ -1,0 +1,59 @@
+{
+  "name": "EriBank_Scenario",
+  "description": "Mobile Testing Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath": "[20.8.7528.27477-preview]",
+    "UiPath.MobileAutomation.Activities": "[20.6.0-preview]",
+    "UiPath.System.Activities": "[20.6.1-preview]",
+    "UiPath.Testing.Activities": "[1.1.1-preview]",
+    "UiPath.UIAutomation.Activities": "[20.8.0-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.6.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "395aa32c-b082-4d5c-88ad-db7be690c9eb",
+        "fileName": "InvaidLogin.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "23925ed1-bd15-433f-ac0b-c637aacd4d93",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "99d2382a-ffa5-49b4-a38a-fad22e8ca63e",
+        "fileName": ".settings\\InvaidLogin.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "20d29d6d-bccf-4101-a27f-a2af8a553b7c",
+        "fileName": "Login_logoutScenario.xaml"
+      }
+    ]
+  },
+  "expressionLanguage": "VisualBasic"
+}
