@@ -15,7 +15,7 @@ steps:
 - task: UiPathPack@2
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '**/*.json'
+    projectJsonPath: 'project.json'
     outputType: 'Tests'
     orchestratorConnection: 'TestUipathServiceConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
