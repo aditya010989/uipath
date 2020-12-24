@@ -1,0 +1,34 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: UiPathPack@2
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: 'D:\aditya\UiPathProject\UiPathProject\'
+    orchestratorConnection: 'TestUipathServiceConnection'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'TestUipathServiceConnection'
+    testProjectPath: 'D:\aditya\UiPathProject\UiPathProject\'
+    environment: 'vopak_env'
+    folderName: 'Default'
+    testReportDestination: 'D:\aditya\UiPathProject\UiPathProject\Result'
+   
+- task: UiPathDeploy@2
+  inputs:
+    orchestratorConnection: 'TestUipathServiceConnection'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'Default'
+    environments: 'vopak_env'
