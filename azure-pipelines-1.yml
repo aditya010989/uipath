@@ -13,7 +13,7 @@ steps:
 - task: UiPathPack@2
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: 'D:\aditya\UiPathProject\UiPathProject\'
+    projectJsonPath: 'D:\aditya\latest uipath\UipathProject_TestAutomation\UipathProject_TestAutomation\'
     orchestratorConnection: 'TestUipathServiceConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
@@ -21,10 +21,10 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'TestUipathServiceConnection'
-    testProjectPath: 'D:\aditya\UiPathProject\UiPathProject\'
+    testProjectPath: 'D:\aditya\latest uipath\UipathProject_TestAutomation\UipathProject_TestAutomation\'
     environment: 'vopak_env'
     folderName: 'Default'
-    testReportDestination: 'D:\aditya\UiPathProject\UiPathProject\Result'
+    testReportDestination: 'D:\aditya\latest uipath\UipathProject_TestAutomation\UipathProject_TestAutomation\'
    
 - task: UiPathDeploy@2
   inputs:
