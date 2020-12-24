@@ -19,3 +19,22 @@ steps:
     outputType: 'Tests'
     orchestratorConnection: 'TestUipathServiceConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+
+settings
+- task: UiPathTest@2
+      inputs:
+        testTarget: 'TestProject'
+        orchestratorConnection: 'TestUipathServiceConnection'
+        testProjectPath: 'D:\aditya\latest uipath\UipathProject_TestAutomation\UipathProject_TestAutomation'
+        environment: 'vopak_env'
+        folderName: 'Default'
+        testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
+Settings
+- task: UiPathDeploy@2
+          inputs:
+            orchestratorConnection: 'TestUipathServiceConnection'
+            packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+            folderName: 'Default'
+            environments: 'vopak_env'
+    
+    
