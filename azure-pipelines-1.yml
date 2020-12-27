@@ -16,7 +16,11 @@ steps:
     projectJsonPath: '$(Build.SourcesDirectory)'
     orchestratorConnection: 'TestUipathServiceConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'TestUipathServiceConnection'
+    folderName: 'Default'
 - task: UiPathTest@2
   inputs:
     testTarget: 'TestProject'
