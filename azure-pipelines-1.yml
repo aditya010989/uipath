@@ -20,14 +20,9 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'TestUipathServiceConnection'
+    environment: 'vopak_env'
     folderName: 'Default'
-- task: UiPathTest@2
-  inputs:
-    testTarget: 'TestProject'
-    orchestratorConnection: 'TestUipathServiceConnection'
-    
-    
-    folderName: 'Default'
+
     
    
 - task: UiPathDeploy@2
