@@ -21,10 +21,10 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'TestUipathServiceConnection'
-    testProjectPath: 'project.jason'
+    testProjectPath: 'project.json'
     environment: 'vopak_env'
     folderName: 'Default'
-    testReportDestination: 'project.jason'
+    testReportDestination: 'project.json'
    
 - task: UiPathDeploy@2
   inputs:
