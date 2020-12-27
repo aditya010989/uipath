@@ -22,7 +22,7 @@ steps:
     testTarget: 'TestProject'
     orchestratorConnection: 'TestUipathServiceConnection'
     
-    environment: 'vopak_env'
+    
     folderName: 'Default'
     
    
