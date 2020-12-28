@@ -29,7 +29,6 @@ steps:
     testProjectPath: '$(Build.SourcesDirectory)'
     environment: 'vopak_env'
     folderName: 'Default'
-    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
   continueOnError: true
   
 - task: UiPathDeploy@2
