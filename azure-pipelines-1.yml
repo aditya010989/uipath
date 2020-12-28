@@ -18,9 +18,9 @@ steps:
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 - task: UiPathTest@2
   inputs:
-    testTarget: 'TestProject'
+    testTarget: 'TestSet'
     orchestratorConnection: 'TestUipathServiceConnection'
-    environment: 'vopak_env'
+    testSet: 'test'
     folderName: 'Default'
 
     
