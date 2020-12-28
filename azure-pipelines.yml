@@ -24,7 +24,7 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'TestUipathServiceConnection'
-    testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
+    testProjectPath: 'D:\aditya\latest uipath\UipathProject_TestAutomation\UipathProject_TestAutomation\'
     environment: 'vopak_env'
     folderName: 'Default'
     testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
