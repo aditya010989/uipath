@@ -20,22 +20,24 @@ steps:
     orchestratorConnection: 'TestUipathServiceConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
+
+
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'TestUipathServiceConnection'
+    testProjectPath: '$(Build.SourcesDirectory)'
+    environment: 'vopak_env'
+    folderName: 'Default'
+    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
+  continueOnError: true
+  
 - task: UiPathDeploy@2
   inputs:
     orchestratorConnection: 'TestUipathServiceConnection'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'Default'
     environments: 'vopak_env'
-
-- task: UiPathTest@2
-  inputs:
-    testTarget: 'TestProject'
-    orchestratorConnection: 'TestUipathServiceConnection'
-    testProjectPath: '$(Build.ArtifactStagingDirectory)\project.json'
-    environment: 'vopak_env'
-    folderName: 'Default'
-    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
-  continueOnError: true
 
     
     
