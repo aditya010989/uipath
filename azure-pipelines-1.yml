@@ -18,10 +18,12 @@ steps:
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 - task: UiPathTest@2
   inputs:
-    testTarget: 'TestSet'
+    testTarget: 'TestProject'
     orchestratorConnection: 'TestUipathServiceConnection'
-    testSet: 'test'
+    testProjectPath: 'D:\aditya\Latest Backup\UipathProject_TestAutomation\'
+    environment: 'vopak_env'
     folderName: 'Default'
+    testReportDestination: 'D:\aditya\Latest Backup\UipathProject_TestAutomation\Result\'
 
     
    
