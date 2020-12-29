@@ -24,10 +24,9 @@ steps:
 
 - task: UiPathTest@2
   inputs:
-    testTarget: 'TestProject'
+    testTarget: 'TestSet'
     orchestratorConnection: 'TestUipathServiceConnection'
-    testProjectPath: '$(Build.SourcesDirectory)'
-    environment: 'vopak_env'
+    testSet: 'test'
     folderName: 'Default'
   continueOnError: true
   
