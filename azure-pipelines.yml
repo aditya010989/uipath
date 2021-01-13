@@ -17,7 +17,7 @@ steps:
     versionType: 'AutoVersion'
     projectJsonPath: 'project.json'
     outputType: 'Tests'
-    orchestratorConnection: 'TestUipathServiceConnection'
+    orchestratorConnection: 'UipathHyd'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
 
@@ -25,7 +25,7 @@ steps:
 - task: UiPathTest@2
   inputs:
     testTarget: 'TestProject'
-    orchestratorConnection: 'TestUipathServiceConnection'
+    orchestratorConnection: 'UipathHyd'
     testProjectPath: '$(Build.SourcesDirectory)'
     environment: 'vopak_env'
     folderName: 'Default'
