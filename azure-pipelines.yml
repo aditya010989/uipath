@@ -33,7 +33,7 @@ steps:
   
 - task: UiPathDeploy@2
   inputs:
-    orchestratorConnection: 'TestUipathServiceConnection'
+    orchestratorConnection: 'UipathHyd'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'Default'
     environments: 'vopak_env'
