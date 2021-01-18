@@ -26,7 +26,7 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'TurnKeyFeedyard'
-    testSet: 'Turnkey_TestSet'
+    testSet: 'login'
     folderName: 'Default'
   continueOnError: true
   
