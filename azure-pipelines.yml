@@ -24,10 +24,9 @@ steps:
 
 - task: UiPathTest@2
   inputs:
-    testTarget: 'TestProject'
+    testTarget: 'TestSet'
     orchestratorConnection: 'TurnKeyFeedyard'
-    testProjectPath: '$(Build.SourcesDirectory)'
-    environment: 'TurnKey_Env'
+    testSet: 'Turnkey_TestSet'
     folderName: 'Default'
   continueOnError: true
   
